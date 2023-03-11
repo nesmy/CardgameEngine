@@ -17,7 +17,7 @@ int main(int argc, char* args[]) {
   }
   std::cout << "create window" << std::endl;
   window = SDL_CreateWindow(
-			    "hello_sdl2",
+			    "hello_sdl",
 			    SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 			    SCREEN_WIDTH, SCREEN_HEIGHT,
 			    SDL_WINDOW_SHOWN
