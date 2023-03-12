@@ -1,23 +1,23 @@
-#include "game.h"
+#include "Window.h"
 
-game::game()
+Window::Window()
 {
 }
 
-game::~game()
+Window::~Window()
 {
 }
 
-void game::Init(int width, int height, const char* name)
+void Window::Init(int width, int height, const char* name)
 {
     InitWindow(width, height, name);
 }
 
-void game::update()
+void Window::update()
 {
 }
 
-void game::render()
+void Window::render()
 {
     BeginDrawing();
             ClearBackground(RAYWHITE);
@@ -25,17 +25,17 @@ void game::render()
         EndDrawing();
 }
 
-void game::Event()
+void Window::Event()
 {
   
 }
 
-void game::OnQuit()
+void Window::OnQuit()
 {
   CloseWindow();
 }
 
-bool game::isRunning()
+bool Window::isRunning()
 {
     return WindowShouldClose();
 }

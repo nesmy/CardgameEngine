@@ -1,9 +1,9 @@
 #include <iostream>
-#include "game.h"
+#include "Window.h"
 
 int main(void)
 {
-    game Game;
+    Window Game;
 
     Game.Init(800, 600);
 
