@@ -1,5 +1,5 @@
 #pragma once
-#include <SDL2/SDL.h>
+#include "raylib.h"
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -12,15 +12,13 @@ class game
         game();
         ~game();
 
-        void Init(const char* name = "Game");
+        void Init(int width, int height, const char* name = "game");
         void update();
         void render();
         void Event();
         void OnQuit();
-        bool isRunning = true;
+        bool isRunning();
     private:
-        SDL_Window* window = NULL;
-        SDL_Surface* screenSurface = NULL;
-        SDL_Event event;
+        
 
 };

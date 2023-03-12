@@ -1,18 +1,18 @@
 #include <iostream>
 #include "game.h"
 
+int main(void)
+{
+    game Game;
 
-int main(int argc, char* args[]) {
-    std::cout << "start" << std::endl;
-  game game;
-  game.Init();
-  while(game.isRunning)
-  {
-    game.render();
-    game.Event();
-  }
-  game.OnQuit();
-  
-  std::cout << "end" << std::endl;
-  return 0;
+    Game.Init(800, 600);
+
+    while (!Game.isRunning())
+    {
+        Game.render();
+    }
+
+    Game.OnQuit();
+
+    return 0;
 }
